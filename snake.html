@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cobra do Yato</title>
+    <link rel="stylesheet" href="styles-jogos.css">
+</head>
+<body>
+    <header>
+        <h1>Snake Game</h1>
+    </header>
+
+    <main class="game-container">
+        <div id="start-screen">
+            <h2>Bem-vindo ao Snake Game!</h2>
+            <div id="difficulty-buttons">
+                <button id="easy">Fácil</button>
+                <button id="medium">Médio</button>
+                <button id="hard">Difícil</button>
+            </div>
+            <button id="start-button" class="game-button">Iniciar Jogo</button>
+        </div>
+
+        <div id="game-content" style="display: none;">
+            <div class="score">Placar: <span id="score-value">0</span></div>
+            <canvas id="game-board" width="400" height="400"></canvas>
+            <button id="restart-button" class="game-button" style="display: none;">Reiniciar Jogo</button>
+        </div>
+    </main>
+
+    <a href="https://yatinho16-debug.github.io/ytjogos/" class="back-button">Voltar ao Menu Principal</a>
+
+    <script src="script-snake.js"></script>
+</body>
+</html>
