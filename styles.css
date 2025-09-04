@@ -1,0 +1,110 @@
+/* Estilos Globais */
+body {
+    font-family: 'Asimoviano', sans-serif;
+    background-color: #1a1a2e; /* Fundo escuro */
+    color: #e5e5e5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 3.5em;
+    color: #00d2ff;
+    text-shadow: 2px 2px 5px rgba(0, 210, 255, 0.3);
+}
+
+header p {
+    font-size: 1.3em;
+    color: #aaa;
+}
+
+/* Container de Seleção de Jogos */
+.game-selection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* Estilo do Cartão do Jogo */
+.game-card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    background-color: #2e2e4e;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+    color: inherit;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.6);
+}
+
+/* Imagem de Fundo do Cartão */
+.card-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.snake-bg {
+    background-image: url('https://universoretro.com.br/wp-content/uploads/2021/03/snake.jpg');
+}
+
+.geometry-bg {
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/9f9bba77-2bc6-41b5-953e-73f9b54b78ae/dccjgk9-6856a76a-77ac-4245-a325-a84149b17a44.png/v1/fill/w_900,h_888/geometry_dash_dark_crescent___fanmade_logo_by_comicpapyrusofficial_dccjgk9-pre.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTAxMSIsInBhdGgiOiJcL2ZcLzlmOWJiYTc3LTJiYzYtNDFiNS05NTNlLTczZjliNTRiNzhhZVwvZGNjamdrOS02ODU2YTc2YS03N2FjLTQyNDUtYTMyNS1hODQxNDliMTdhNDQucG5nIiwid2lkdGgiOiI8PTEwMjQifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.Hbn6OeNC7Yupp_yPBbW_AVdWblYB1oCVrtqF-dmlJOQ');
+}
+
+/* Conteúdo do Cartão */
+.card-content {
+    padding: 25px;
+    text-align: center;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    font-size: 1.8em;
+    color: #00d2ff;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Rodapé */
+footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+}
+.space-bg {
+    background-image: url('https://images.chesscoms.com/uploads/v1/images_users/tiny_mce/PedroPinhata/phpxsIApe.png'); /* Substitua a URL por uma imagem de sua escolha */
+}
+
+/* Opcional: Adicionar estilos para os outros fundos também */
+.snake-bg {
+    background-image: url('https://via.placeholder.com/400x200?text=Cobra+do+Yato');
+}
+
+.geometry-bg {
+    background-image: url('https://via.placeholder.com/400x200?text=Quadrado+Pulante');
+}
