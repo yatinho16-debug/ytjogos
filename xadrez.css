@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    position: relative; /* Necessário para o overlay */
+}
+
+.info-jogador {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    border: 5px solid #333;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.casa {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.casa.claro {
+    background-color: #eeeed2;
+}
+
+.casa.escuro {
+    background-color: #769656;
+}
+
+.selecionada {
+    border: 3px solid #ff0;
+    box-sizing: border-box;
+}
+
+.peca {
+    user-select: none;
+    cursor: grab;
+    transition: transform 0.2s ease-in-out;
+}
+
+.peca:hover {
+    transform: scale(1.1);
+}
+
+.game-over-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none; /* Inicia escondido */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    color: white;
+    text-align: center;
+}
+
+.game-over-overlay h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.game-over-overlay p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.game-over-overlay button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.game-over-overlay button:hover {
+    background-color: #45a049;
+}
